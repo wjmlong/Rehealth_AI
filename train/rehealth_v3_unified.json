@@ -1,0 +1,45 @@
+{
+  "model_version": "v3.0-unified",
+  "auc": 0.7666,
+  "feature_cols": [
+    "age",
+    "gender",
+    "bmi",
+    "sbp",
+    "dbp",
+    "fasting_glucose",
+    "total_cholesterol",
+    "ldl",
+    "hdl",
+    "triglycerides",
+    "exercise_days",
+    "smoking",
+    "drinking",
+    "diabetes_history",
+    "hypertension_history",
+    "family_history"
+  ],
+  "cat_features": [
+    "gender",
+    "smoking",
+    "drinking",
+    "diabetes_history",
+    "hypertension_history",
+    "family_history"
+  ],
+  "n_features": 16,
+  "data_sources": [
+    "nhanes",
+    "charls",
+    "mimic_iv"
+  ],
+  "best_params": {
+    "iterations": 590,
+    "learning_rate": 0.11167885348143815,
+    "depth": 7,
+    "l2_leaf_reg": 3,
+    "subsample": 0.6365363834906363,
+    "colsample_bylevel": 0.7808864607333729
+  },
+  "unit_note": "glucose/lipids in mmol/L, BP in mmHg, BMI in kg/m2"
+}

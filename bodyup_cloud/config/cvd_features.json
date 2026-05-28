@@ -1,0 +1,38 @@
+{
+  "disease_type": "CVD",
+  "model_version": "2.0",
+  "data_source": "NHANES 2015-2016",
+  "feature_cols": [
+    "age", "gender", "bmi", "sbp", "dbp",
+    "fasting_glucose", "total_cholesterol", "ldl", "hdl", "triglycerides",
+    "exercise_days", "smoking", "drinking",
+    "diabetes_history", "hypertension_history", "family_history"
+  ],
+  "cat_features": [
+    "gender", "smoking", "drinking",
+    "diabetes_history", "hypertension_history", "family_history"
+  ],
+  "continuous_features": [
+    "age", "bmi", "sbp", "dbp", "fasting_glucose",
+    "total_cholesterol", "ldl", "hdl", "triglycerides", "exercise_days"
+  ],
+  "units": {
+    "sbp": "mmHg", "dbp": "mmHg",
+    "fasting_glucose": "mmol/L",
+    "total_cholesterol": "mmol/L", "ldl": "mmol/L", "hdl": "mmol/L",
+    "triglycerides": "mmol/L",
+    "bmi": "kg/m²",
+    "exercise_days": "days/week"
+  },
+  "valid_ranges": {
+    "age": [18, 100], "bmi": [15, 60],
+    "sbp": [60, 250], "dbp": [40, 150],
+    "fasting_glucose": [2.0, 35.0],
+    "total_cholesterol": [2.0, 20.0],
+    "ldl": [0.5, 10.0], "hdl": [0.3, 5.0],
+    "triglycerides": [0.2, 20.0],
+    "exercise_days": [0, 7]
+  },
+  "gender_encoding": {"male": 1, "female": 0},
+  "binary_encoding": {"yes": 1, "no": 0, "true": 1, "false": 0, "1": 1, "0": 0}
+}

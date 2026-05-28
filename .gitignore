@@ -1,0 +1,14 @@
+env/
+ruihe/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.env
+data/
+keys/
+*.pkl
+*.db
+.DS_Store
